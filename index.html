@@ -196,7 +196,7 @@ window.REGLAS = {
   urlWeb: 'https://biooma-biotech1.github.io/instrucciones/',
 
   contacto: {
-    whatsapp: ['+57 300 859 2542', '+57 311 339 7693'],
+    whatsapp: ['+57 300 859 2542', '+57 311 339 7693', '+57 314 850 8368'],
     redes: 'biooma.biotech',          // Instagram y Facebook
     web: 'biooma.com'
   },
@@ -232,7 +232,6 @@ window.REGLAS = {
      Un producto puede traer su propia lista en `pasos:` y reemplaza a esta.
      Marcadores: {cantidad}  {lugar}  {frecuencia} */
   pasos: [
-    'Confirme los datos del sistema (tipo, volumen y carga) con el cliente antes de aplicar.',
     'Mida la cantidad indicada en este documento: {cantidad}.',
     'Aplique el producto en: {lugar}.',
     'Repita la aplicación con la frecuencia indicada: {frecuencia}.'
@@ -425,7 +424,7 @@ window.REGLAS = {
       (p.validado ? '' : '<div class="borrador">BORRADOR · Cantidades y pasos pendientes de validación técnica por BIOOMA</div>') +
       '<header class="enc"><img src="' + (LOGOS[p.logo] || '') + '" alt="' + esc(p.nombre) + '">' +
         '<div class="tit"><h2>Instrucciones de aplicación</h2><div class="prod">' + esc(p.nombre) + ' · ' + esc(s.etiqueta) + '</div></div></header>' +
-      '<div class="contactos"><span>WhatsApp <b>' + R.contacto.whatsapp.map(esc).join(' · ') + '</b></span><span>Instagram y Facebook <b>' + esc(R.contacto.redes) + '</b></span><span>Web <b>' + esc(R.contacto.web) + '</b></span></div>' +
+      '<div class="contactos"><span style="flex:1 1 100%">WhatsApp <b>' + R.contacto.whatsapp.map(esc).join(' · ') + '</b></span><span>Instagram y Facebook <b>' + esc(R.contacto.redes) + '</b></span><span>Web <b>' + esc(R.contacto.web) + '</b></span></div>' +
       '<section><h3>Cliente y sistema</h3><div class="grid3">' +
         '<div class="kv"><span>Cliente</span><b>' + val($('cliente').value.trim()) + '</b></div>' +
         '<div class="kv"><span>Sitio / ubicación</span><b>' + val($('sitio').value.trim()) + '</b></div>' +
